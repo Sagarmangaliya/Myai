@@ -5,7 +5,10 @@ export default defineConfig({
     port: 5173,
     host: "0.0.0.0", // सभी नेटवर्क से एक्सेस की अनुमति  
     strictPort: true,
-    allowedHosts: "all" // सभी होस्ट को अलाउ करने के लिए  
+    cors: true,
+    allowedHosts: [
+      "localhost",
+      "fe118761-bd62-46a8-8b9e-5174d9779133-00-3444qikyspnsi.sisko.replit.dev"
+    ]
   }
 });
-
